@@ -16,4 +16,4 @@ Description: An R interface to the Chemistry Development Kit, a Java library
     interact with the CDK using 'rJava'. However 'rcdk' exposes functionality in a more
     idiomatic way. The CDK library itself is released as LGPL and the sources can be
     obtained from <https://github.com/cdk/cdk>.
-RoxygenNote: 5.0.1
+RoxygenNote: 7.0.2
