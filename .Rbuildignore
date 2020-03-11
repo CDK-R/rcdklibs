@@ -1,4 +1,4 @@
 ^cran-comments.md$
-^README\.Rmd$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^README_DEV.md$
