@@ -15,9 +15,9 @@ build: cdk.zip
 	sed -i .bak -e '88,92d;148,157d;238,242d;343,347d;' cdk/cdk-cdk-$(CDK_VERSION)/bundle/pom.xml
 	cd cdk/cdk-cdk-$(CDK_VERSION)/bundle && mvn compile war:war -P jdk11-plus && cd ../../..
 
-guava:
-	wget -O inst/cont/guava-31.1-jre.jar https://repo1.maven.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar
-	wget -O inst/cont/failureaccess-1.0.1.jar https://repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
+# guava:
+# 	wget -O inst/cont/guava-31.1-jre.jar https://repo1.maven.org/maven2/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar
+# 	wget -O inst/cont/failureaccess-1.0.1.jar https://repo1.maven.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
 
 
 prepare: build guava
