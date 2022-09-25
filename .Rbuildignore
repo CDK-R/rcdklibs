@@ -7,3 +7,4 @@ README.Rmd
 cdk/
 cdk.zip
 revdep/
+^CRAN-SUBMISSION$
