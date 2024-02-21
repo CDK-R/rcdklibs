@@ -10,9 +10,9 @@ build: cdk.zip
 	unzip cdk.zip -d cdk
 	# 88 - 92 is cdk-pdb
 	# 148-157 is cdk-builder3d and builder3d-tools
-	# 238-242 is cdk-pdbcml
-	# 343-337 is cdk-iordf 
-	# sed -i .bak -e '88,92d;148,157d;238,242d;343,347d;' cdk/cdk-cdk-$(CDK_VERSION)/bundle/pom.xml
+	# 248-252 is cdk-pdbcml
+	# 372-376 is cdk-iordf 
+	sed -i .bak -e '88,92d;148,157d;248,252d;372,376d;' cdk/cdk-cdk-$(CDK_VERSION)/bundle/pom.xml
 	cd cdk/cdk-cdk-$(CDK_VERSION)/bundle && mvn compile war:war -P jdk11-plus && cd ../../..
 
 
