@@ -1,3 +1,9 @@
+# v2.9
+
+- Update to CDK 2.9 libraries.
+- Removing a number of less-used jars prior to upload to CRAN. See the Makefile
+
+
 # v2.8
 
 - Update to CDK 2.8 libraries.
