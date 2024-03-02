@@ -1,6 +1,6 @@
 Package: rcdklibs
 Version: 2.9
-Date: 2024-02-20
+Date: 2024-03-02
 Authors@R: c(
   person('Rajarshi', 'Guha', ,'rajarshi.guha@gmail.com', role=c('aut'),
     comment = c(ORCID = "0000-0001-7403-8819")),
