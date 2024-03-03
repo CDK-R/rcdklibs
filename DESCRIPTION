@@ -21,3 +21,4 @@ Description: An R interface to the Chemistry Development Kit, a Java library
     obtained from <https://github.com/cdk/cdk>.
 RoxygenNote: 7.3.1
 URL: https://app.travis-ci.com/CDK-R/rcdklibs
+Encoding: UTF-8
