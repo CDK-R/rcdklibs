@@ -1,11 +1,13 @@
 Package: rcdklibs
-Version: 2.9
-Date: 2024-03-02
+Version: 2.11
+Date: 2025-09-10
 Authors@R: c(
   person('Rajarshi', 'Guha', ,'rajarshi.guha@gmail.com', role=c('aut'),
     comment = c(ORCID = "0000-0001-7403-8819")),
   person('Zachary', 'Charlop-Powers', ,'zach.charlop.powers@gmail.com',role=c('cre'), 
       comment = c(ORCID = "0000-0001-8816-4680")),
+  person('Egon', 'Willighagen', ,'egon.willighagen@maastrichtuniversity.nl', role=c('ctb'), 
+      comment = c(ORCID = "0000-0001-7542-0286")))
   person('CDK Project', '', role=c('ctb', 'cph'), comment='CDK Java library contained in multiple jar files'))
 Depends:
     R (>= 2.0.0),

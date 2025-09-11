@@ -1,5 +1,5 @@
 
-CDK_VERSION=2.9
+CDK_VERSION=2.11
 JAR_DIR=cdk/cdk-cdk-$(CDK_VERSION)/bundle/target/cdk-bundle-$(CDK_VERSION)/WEB-INF/lib
 
 cdk.zip:
