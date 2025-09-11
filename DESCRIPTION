@@ -7,7 +7,7 @@ Authors@R: c(
   person('Zachary', 'Charlop-Powers', ,'zach.charlop.powers@gmail.com',role=c('cre'), 
       comment = c(ORCID = "0000-0001-8816-4680")),
   person('Egon', 'Willighagen', ,'egon.willighagen@maastrichtuniversity.nl', role=c('ctb'), 
-      comment = c(ORCID = "0000-0001-7542-0286")))
+      comment = c(ORCID = "0000-0001-7542-0286")),
   person('CDK Project', '', role=c('ctb', 'cph'), comment='CDK Java library contained in multiple jar files'))
 Depends:
     R (>= 2.0.0),
@@ -21,5 +21,5 @@ Description: An R interface to the Chemistry Development Kit, a Java library
     interact with the CDK using 'rJava'. However 'rcdk' exposes functionality in a more
     idiomatic way. The CDK library itself is released as LGPL and the sources can be
     obtained from <https://github.com/cdk/cdk>.
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.3
 URL: https://cdk-r.github.io/rcdklibs/
