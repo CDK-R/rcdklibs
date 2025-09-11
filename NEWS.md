@@ -1,3 +1,9 @@
+# v2.11
+
+- Update to CDK 2.11 libraries.
+- Add Egon as contributor
+
+
 # v2.9
 
 - Update to CDK 2.9 libraries.
