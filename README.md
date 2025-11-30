@@ -4,7 +4,6 @@
 # rcdklibs
 
 <!-- badges: start -->
-
 [![CRAN
 Version](https://www.r-pkg.org/badges/version/rcdklibs?color=green)](https://cran.r-project.org/package=rcdklibs)
 [![CRAN
