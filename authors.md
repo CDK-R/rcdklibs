@@ -15,14 +15,14 @@
 
 ## Citation
 
-Guha R (2025). *rcdklibs: The CDK Libraries Packaged for R*. R package
-version 2.11, <https://cdk-r.github.io/rcdklibs/>.
+Guha R (2026). *rcdklibs: The CDK Libraries Packaged for R*. R package
+version 2.13, <https://cdk-r.github.io/rcdklibs/>.
 
     @Manual{,
       title = {rcdklibs: The CDK Libraries Packaged for R},
       author = {Rajarshi Guha},
-      year = {2025},
-      note = {R package version 2.11},
+      year = {2026},
+      note = {R package version 2.13},
       url = {https://cdk-r.github.io/rcdklibs/},
     }
 

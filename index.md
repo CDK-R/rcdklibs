@@ -6,8 +6,8 @@ ecosystem. The primary consumer of `rcdklibs` is the
 [rcdk](https://github.com/CDK-R/cdkr) package but all of CDK’s
 functionality can be accessed by the standard
 [rJava](https://CRAN.R-project.org/package=rJava) API. The libs provided
-in this release correspond to the [2.9
-Release](https://github.com/cdk/cdk/releases/tag/cdk-2.9)
+in this release correspond to the [2.13
+Release](https://github.com/cdk/cdk/releases/tag/cdk-2.13)
 
 ``` R
 # Example
@@ -32,12 +32,14 @@ You can install the released version of rcdklibs from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
+
 install.packages("rcdklibs")
 ```
 
 And the development version from [GitHub](https://github.com/) with:
 
 ``` r
+
 # install.packages("devtools")
 devtools::install_github("https://github.com/CDK-R/rcdklibs")
 ```
