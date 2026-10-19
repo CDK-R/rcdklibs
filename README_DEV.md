@@ -1,26 +1,13 @@
 # Packaging CDK
 
-The CDK2.0 release is 25MB. To try to reduce this size we built a version of the CDK libs that removes several sub-libraries.
+rcdklibs bundles the official CDK release uberjar (`cdk-<version>.jar`, published
+with each [CDK release](https://github.com/cdk/cdk/releases)) as the only jar in
+`inst/cont/`. It already includes all CDK modules and their dependencies, so no
+custom build is needed.
 
-```
-git clone https://github.com/cdk/cdk.git
+To update to a new CDK release:
 
-cd cdk/bundle
-
-#checkout the tag of the released version
-git checkout -b rcdk2 cdk2-2.0
-
-vi pox.xml
-
-# remove the entries for:
-# builder3d
-# builder3d-tools
-# cdk-pdb
-# cdk-pdbcml
-
-mvn package
-```
-
-You can now use the target/cdk-2.0.jar for inclusion in rcdklibs
-
-
+1. Set `CDK_VERSION` in the `Makefile`.
+2. Run `make all`. This downloads the uberjar, verifies its SHA-256 checksum and
+   replaces the contents of `inst/cont/`.
+3. Update `Version`/`Date` in `DESCRIPTION` and add an entry to `NEWS.md`.

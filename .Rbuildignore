@@ -1,11 +1,8 @@
-Makefile
 README.Rmd
 ^cran-comments.md$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README_DEV.md$
-cdk/
-cdk.zip
 revdep/
 ^CRAN-SUBMISSION$
 ^_pkgdown\.yml$
@@ -13,3 +10,5 @@ revdep/
 ^pkgdown$
 ^\.github$
 ^cran-comments\.md$
+^Makefile$
+^build$

@@ -1,30 +1,18 @@
+CDK_VERSION=2.13
+BASE_URL=https://github.com/cdk/cdk/releases/download/cdk-$(CDK_VERSION)
+JAR=cdk-$(CDK_VERSION).jar
+SUMS=cdk-$(CDK_VERSION)-checksums-sha256.txt
 
-CDK_VERSION=2.11
-JAR_DIR=cdk/cdk-cdk-$(CDK_VERSION)/bundle/target/cdk-bundle-$(CDK_VERSION)/WEB-INF/lib
-
-cdk.zip:
-	wget -O cdk.zip https://github.com/cdk/cdk/archive/refs/tags/cdk-$(CDK_VERSION).zip
-	
-
-build: cdk.zip
-	unzip cdk.zip -d cdk
-	# 88 - 92 is cdk-pdb
-	# 148-157 is cdk-builder3d and builder3d-tools
-	# 248-252 is cdk-pdbcml
-	# 372-378 is cdk-iordf 
-	sed -i .bak -e '88,92d;148,157d;248,252d;372,378d;' cdk/cdk-cdk-$(CDK_VERSION)/bundle/pom.xml
-	cd cdk/cdk-cdk-$(CDK_VERSION)/bundle && mvn compile war:war -P jdk11-plus && cd ../../..
-
-
-prepare: build
-	# find cdk/ -name "*.jar" | parallel "cp {}  inst/cont/{/}"	
-	cp $(JAR_DIR)/*jar inst/cont/
-
+# Download the CDK release uberjar, verify it, and install it in inst/cont
+prepare:
+	mkdir -p build
+	curl -fL -o build/$(JAR) $(BASE_URL)/$(JAR)
+	curl -fL -o build/$(SUMS) $(BASE_URL)/$(SUMS)
+	cd build && grep " $(JAR)$$" $(SUMS) | shasum -a 256 -c -
+	rm -f inst/cont/*.jar
+	cp build/$(JAR) inst/cont/
 
 clean:
-	rm cdk.zip
-	rm -rf cdk/
-
+	rm -rf build
 
 all: clean prepare
-
