@@ -1,3 +1,8 @@
+# v2.13
+
+- Update to CDK 2.13 libraries.
+- Bundle the official CDK release uberjar (`cdk-2.13.jar`) instead of ~90 individual jars; the Makefile now just downloads and verifies it.
+
 # v2.11
 
 - Update to CDK 2.11 libraries.
