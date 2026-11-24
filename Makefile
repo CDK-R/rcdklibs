@@ -1,4 +1,4 @@
-CDK_VERSION=2.13
+CDK_VERSION=2.14.1
 BASE_URL=https://github.com/cdk/cdk/releases/download/cdk-$(CDK_VERSION)
 JAR=cdk-$(CDK_VERSION).jar
 SUMS=cdk-$(CDK_VERSION)-checksums-sha256.txt

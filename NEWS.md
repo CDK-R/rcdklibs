@@ -1,3 +1,7 @@
+# v2.14.1
+
+- Update to CDK 2.14.1 libraries.
+
 # v2.13
 
 - Update to CDK 2.13 libraries.
